@@ -14,3 +14,121 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* nav */
+nav {
+  background-color: #940404;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  text-shadow: 4px 4px 5px black;
+  }
+
+  nav a {
+  font-weight: 600;
+  font-size: 18px;
+  }
+
+  .active {
+  color: tomato;
+  }
+  
+  nav div {
+  display: flex;
+  gap: 10px;
+  }
+
+/* home page */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 20px;
+  gap: 20px;
+  background-color: #221f1f;
+  color: white;
+}
+
+.movie img {
+  max-width: 100%;
+  border-radius: 12px;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.movie:hover img {
+  transform: scale(1.05) translateY(-10px);
+}
+
+.movie h4 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* detail page */
+.detailOuterBox {
+  background-color: #f5f5f1;
+  padding: 30px;
+  height: 60vh;
+}
+
+.detailInnerBox {
+  padding-right: 20px;
+}
+
+.detailTitle {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.detailBox {
+  display: flex;
+}
+
+.StarDate {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.detailStar {
+  display: flex;
+  margin-right: 10px;
+}
+
+.detailDate {
+  display: flex;
+}
+
+.detailImg img {
+  height: 350px;
+}
+
+/* detail page more */
+.morebox {
+  padding: 30px;
+  background-color: #221f1f;
+  display: block;
+  align-items: center;
+}
+
+.moreboxTitle {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.moreboxInner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.moreboxInner img {
+  width: 150px;
+}
+
+
