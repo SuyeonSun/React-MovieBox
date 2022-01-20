@@ -1,6 +1,8 @@
 const API_KEY = process.env.API_KEY;
 
 module.exports = {
+  poweredByHeader: process.env.NODE_ENV === 'development',
+  reactStrictMode: process.env.NODE_ENV === 'development',
   reactStrictMode: true,
   async redirects() {
     return [
